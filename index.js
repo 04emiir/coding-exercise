@@ -1,13 +1,12 @@
 window.onload = function () {
-    /* Example array. The first element is the task name. 
-    The second element is a boolean (task done or not)*/
+    /* Example array. [TASK NAME, DONE STATUS]*/
     var arrayTask = [
         ["Get up early", true],
         ["Do some meditation", true],
         ["Eat healthy breakfast", false],
         ["Drink plenty of water", false],
         ["Exercise", false],
-        ["Smile :", false],
+        ["Smile :)", false],
     ];
 
     fillTask(arrayTask);
@@ -88,5 +87,6 @@ function clearAll() {
         /* prompt and remove all tasks */
         let choice = confirm("This will delete all the tasks. Proceed?");
         choice ? node.querySelectorAll("*").forEach((n) => n.remove()) : '';
+        document.getElementById("input_task").value = "";
     }
 }
