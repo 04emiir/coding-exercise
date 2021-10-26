@@ -1,0 +1,126 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTAINER FOR WHOLE APP*/
+#task_container {
+    background-color: lightgray;
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+/* INPUT*/
+#input_task {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-indent: 20px;
+}
+
+/* INPUT TEXT PLACEHOLDER */
+#input_task::placeholder {
+    margin-left: 50px;
+    color: black;
+    font-size: 15px;
+}
+
+/* CONTAINER FOR THE LIST OF TASKS*/
+#task_list {
+    width: 100%;
+    height: auto;
+    min-height: 55px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+#secret_text {
+    display: none;
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 900;
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/* ADD COLOR TO ROWS - ADD ROUNDED BORDER TO FIRST AND LAST ROW*/
+.single_task:nth-child(odd) {
+    background-color: white;
+}
+
+.single_task:nth-child(even) {
+    background-color: rgb(235, 235, 235);
+}
+
+.single_task:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+
+.single_task:first-child {
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+/* SINGLE TASK (A ROW)*/
+.single_task {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* task text*/
+.single_task p {
+    margin-left: 3%;
+    font-size: 15px;
+    line-height: 25px;
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.single_task p:hover {
+    cursor: pointer;
+}
+
+/* task text when finished*/
+.single_task p.isdone {
+    color: rgb(0, 201, 0);
+    text-decoration: line-through;
+}
+
+/* Delete button for task*/
+.delete-task {
+    height: 55%;
+    align-self: center;
+    margin-right: 3%;
+    padding: 5px;
+}
+
+
+/* Clear all button*/
+#clear_all {
+    align-self: self-end;
+    padding: 7px;
+}
+
+
+
+
+
+
+
