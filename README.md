@@ -12,3 +12,6 @@ You can create new tasks, mark them as completed, and delete them.
 To launch the web app in your browser, simply download or clone the project in your machine.
 Then, double-click **index.html** file and test it.
 
+Maybe you are to lazy to download it? You can also click here <https://emiliowebdev.github.io/coding-exercise/>
+and test it thank to GutHub Pages.
+
