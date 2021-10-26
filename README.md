@@ -13,5 +13,5 @@ To launch the web app in your browser, simply download or clone the project in y
 Then, double-click **index.html** file and test it.
 
 Maybe you are to lazy to download it? You can also click here <https://emiliowebdev.github.io/coding-exercise/>
-and test it thank to GutHub Pages.
+and test it (thanks to GitHub Pages)
 
